@@ -1,18 +1,18 @@
 import TitleSection from '@/components/landing-page/title-section'
 import CustomCard from '@/components/landing-page/custom-card'
 import { Button } from '@/components/ui/button'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { CardDescription, CardTitle, CardContent } from '@/components/ui/card'
+import { CLIENTS, USERS, PRICING_CARDS, PRICING_PLANS} from '@/lib/constants'
 import React from 'react'
 import Image from 'next/image'
 import Banner from '../../../public/appBanner.png'
 import Cal from '../../../public/cal.png'
 import Diamond from '../../../public/icons/diamond.svg';
 import CheckIcon from '../../../public/icons/check.svg';
-import { CLIENTS, USERS, PRICING_CARDS, PRICING_PLANS} from '@/lib/constants'
 import { randomUUID } from 'crypto'
 import { twMerge } from 'tailwind-merge'
 import clsx from 'clsx'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { CardDescription, CardTitle, CardContent } from '@/components/ui/card'
 
 const HomePage = () => {
   return (
@@ -382,8 +382,7 @@ const HomePage = () => {
             />
           ))}
         </div>
-      </section>
-     
+      </section>  
     </>
   )
 }
