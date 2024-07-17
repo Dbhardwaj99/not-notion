@@ -5,7 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormSchema } from "@/lib/types";
-import Loader from "@/components/loader";
+import Loader from "@/components/global/loader";
 import CLogo from "../../../../public/cypresslogo.svg";
 import {
   Form,
