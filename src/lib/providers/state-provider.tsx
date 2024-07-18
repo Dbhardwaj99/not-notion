@@ -343,6 +343,7 @@ const AppStateProvider: React.FC<AppStateProviderProps> = ({ children }) => {
 
   return (
     <AppStateContext.Provider
+      // value={{ state, dispatch }}
       value={{ state, dispatch, workspaceId, folderId, fileId }}
     >
       {children}
